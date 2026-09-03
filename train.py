@@ -11,7 +11,7 @@ AUTOTUNE = tf.data.experimental.AUTOTUNE
 ds_train_ = image_dataset_from_directory(
     'C:/Users/kinse/Desktop/Image classifier/seg_train',
     labels='inferred',
-    label_mode='int',          # was 'binary' — wrong for 6 classes, see note below
+    label_mode='int',          
     image_size=[128, 128],
     interpolation='nearest',
     batch_size=64,
